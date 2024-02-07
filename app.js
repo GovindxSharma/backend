@@ -4,6 +4,7 @@ const errorMIddleware=require('./middleware/error')
 const cookieParser=require('cookie-parser')
 const bodyParser = require('body-parser');
 const dotenv=require('dotenv')
+const cors=require('cors')
 // const fileupload=require('express-fileupload')
 
 
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors())
 
 // make json in use
 
