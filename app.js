@@ -18,7 +18,10 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors())
+app.use(cors({ 
+    origin: process.env.FRONTEND_URL, 
+    credentials: true 
+   }));
 
 // make json in use
 
