@@ -2,7 +2,7 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "description": "E-commerce Website",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "build":"npm i"
