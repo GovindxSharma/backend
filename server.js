@@ -4,7 +4,7 @@ const connectDatabase=require('./config/database')
 
 
 
-dotenv.config({path:'backend/config/.env'})
+dotenv.config({path:'config/.env'})
 
 connectDatabase()
 
